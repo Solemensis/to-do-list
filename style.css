@@ -19,6 +19,15 @@ html {
   overflow: hidden;
 }
 
+a:link,
+a:visited {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 90%;
+  left: 4%;
+}
+
 .container {
   background-color: rgba(248, 113, 255, 0.723);
   border-radius: 3rem;
