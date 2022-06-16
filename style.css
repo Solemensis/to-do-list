@@ -95,8 +95,8 @@ h1 {
 }
 
 .blurBehind {
-  filter: blur(7px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  filter: blur(8px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(background.jpg);
   width: 55rem;
   background-size: 153rem;
