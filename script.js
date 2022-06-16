@@ -11,6 +11,7 @@ addButton.addEventListener("click", function () {
   let toDo = document.createElement("li");
 
   //let textInput.value be our new list item's textContent
+  toDo.style.width = "10px";
   toDo.textContent = textInput.value;
 
   //if statement for just not to create empty list items
@@ -26,7 +27,7 @@ addButton.addEventListener("click", function () {
   toDo.addEventListener("click", function () {
     this.style.textDecoration = "line-through";
     this.style.textDecorationThickness = "2px";
-    this.style.textDecorationColor = "black";
+    this.style.textDecorationColor = "rgb(243, 12, 12)";
 
     //remove list item click event setup
     toDo.addEventListener("click", function () {
