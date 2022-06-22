@@ -11,16 +11,23 @@ addButton.addEventListener("click", function () {
   let toDo = document.createElement("li");
 
   //let textInput.value be our new list item's textContent
-  toDo.style.width = "10px";
   toDo.textContent = textInput.value;
-
   //if statement for just not to create empty list items
   if (textInput.value) {
     //make our toDo list item an appendChild of toDoContainer in html dom
     toDoContainer.appendChild(toDo);
+
+    //a temporary solution for long toDos
+    document.querySelector(".container").style.minWidth = `${
+      toDo.clientWidth + 100
+    }px`;
   }
 
-  //to erase the html text input field value
+  //a great potantial solution for long toDos (put into media queries)
+  // if(toDo.clientWidth > 487){
+  // }
+
+  //to erase the html text input field value after putting the previous one
   textInput.value = "";
 
   //line-through click event setup
