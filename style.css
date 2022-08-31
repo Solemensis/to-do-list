@@ -32,7 +32,7 @@ a:visited {
   /* background-color: rgba(244, 32, 255, 0.414); */
   border-radius: 3rem;
   width: 55rem;
-
+  backdrop-filter: blur(1rem);
   height: 90%;
   position: absolute;
   top: 50%;
@@ -95,18 +95,4 @@ h1 {
   left: 25%;
   user-select: none;
   color: white;
-}
-
-.blurBehind {
-  filter: blur(8px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(background.jpg);
-  width: 55rem;
-  background-size: 153rem;
-  background-position: 50%;
-  height: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
